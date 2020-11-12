@@ -1,0 +1,309 @@
+<counties>
+	<county name="Bjelovarsko-bilogorska" code="1150">
+		<city name="Berek" code="1171"/>
+		<city name="Bjelovar" code="1172"/>
+		<city name="Bjelovar - Okolica" code="1173"/>
+		<city name="Čazma" code="1174"/>
+		<city name="Daruvar" code="1175"/>
+		<city name="Dežanovac" code="1176"/>
+		<city name="Đulovac" code="1177"/>
+		<city name="Garešnica" code="1178"/>
+		<city name="Grubišno Polje" code="1179"/>
+		<city name="Hercegovac" code="1180"/>
+		<city name="Ivanska" code="1181"/>
+		<city name="Kapela " code="1182"/>
+		<city name="Končanica" code="1183"/>
+		<city name="Nova Rača" code="1184"/>
+		<city name="Rovišće" code="1185"/>
+		<city name="Severin" code="1186"/>
+		<city name="Sirač" code="1187"/>
+		<city name="Šandrovac" code="1188"/>
+		<city name="Štefanje " code="1189"/>
+		<city name="Velika Pisanica" code="1190"/>
+		<city name="Velika Trnovitica" code="1191"/>
+		<city name="Veliki Grđevac" code="1192"/>
+		<city name="Veliko Trojstvo" code="1193"/>
+		<city name="Zrinski Topolovac" code="1194"/>
+	</county>
+	<county name="Brodsko-posavska" code="1151">
+		<city name="Bebrina" code="1195"/>
+		<city name="Brodski Stupnik" code="1196"/>
+		<city name="Bukovlje" code="1197"/>
+		<city name="Cernik" code="1198"/>
+		<city name="Davor" code="1199"/>
+		<city name="Donji Andrijevci" code="1200"/>
+		<city name="Dragalić" code="1201"/>
+		<city name="Garčin" code="1202"/>
+		<city name="Gornja Vrba" code="1203"/>
+		<city name="Gornji Bogićevci" code="1204"/>
+		<city name="Gundinci" code="1205"/>
+		<city name="Klakar" code="1206"/>
+		<city name="Nova Gradiška" code="1207"/>
+		<city name="Nova Kapela" code="1208"/>
+		<city name="Okučani" code="1209"/>
+		<city name="Oprisavci" code="1210"/>
+		<city name="Oriovac" code="1211"/>
+		<city name="Podcrkavlje" code="1212"/>
+		<city name="Rešetari" code="1213"/>
+		<city name="Sibinj" code="1214"/>
+		<city name="Sikirevci" code="1215"/>
+		<city name="Slavonski Brod" code=" 1216"/>
+		<city name="Slavonski Šamac" code="1218"/>
+		<city name="Stara Gradiška" code="1219"/>
+		<city name="Staro Petrovo Selo" code="1220"/>
+		<city name="Velika Kopanica" code="1221"/>
+		<city name="Vrbje" code="1222"/>
+		<city name="Vrpolje" code="1223"/>
+	</county>
+	<county name="Dubrovačko-neretvanska" code="1152">
+		<city name="Blato" code="1224"/>
+		<city name="Dubrovačko Primorje" code="1225"/>
+		<city name="Dubrovnik" code="1226"/>
+		<city name="Dubrovnik - Okolica" code="1227"/>
+		<city name="Janjina" code="1228"/>
+		<city name="Konavle" code="1229"/>
+		<city name="Korčula" code="1230"/>
+		<city name="Kula Norinska" code="1231"/>
+		<city name="Lastovo" code="1232"/>
+		<city name="Lumbarda" code="1233"/>
+		<city name="Metković" code="1234"/>
+		<city name="Mljet" code="1235"/>
+		<city name="Opuzen" code="1236"/>
+		<city name="Orebić" code="1237"/>
+		<city name="Ploče" code="1238"/>
+		<city name="Pojezerje" code="1239"/>
+		<city name="Slivno" code=" 1240"/>
+		<city name="Smokvica" code="1241"/>
+		<city name="Ston" code="1242"/>
+		<city name="Trpanj" code="1243"/>
+		<city name="Vela Luka" code="1244"/>
+		<city name="Zažablje" code="1245"/>
+		<city name="Župa Dubrovačka" code="1246"/>
+	</county>
+	<county name="Grad Zagreb" code="1153">
+
+	</county>
+	<county name="Istarska" code="1154">
+
+	</county>
+	<county name="Izvan Hrvatske - Unutar EU" code="-30">
+
+	</county>
+	<county name="Izvan Hrvatske - Izvan EU" code="-40">
+
+	</county>
+	<county name="Karlovačka" code="1155">
+
+	</county>
+	<county name="Koprivničko-križevačka" code="1156">
+		<city name="Drnje" code="1328"/>
+		<city name="Đelekovec" code="1329"/>
+		<city name="Đurđevac" code="1330"/>
+		<city name="Ferdinandovac" code="1331"/>
+		<city name="Gola" code="1332"/>
+		<city name="Gornja Rijeka" code="1333"/>
+		<city name="Hlebine" code="1334"/>
+		<city name="Kalinovac" code="1335"/>
+		<city name="Kalnik" code="1336"/>
+		<city name="Kloštar Podravski" code="1337"/>
+		<city name="Koprivnica" code="1338"/>
+		<city name="Koprivnica - Okolica" code="1339"/>
+		<city name="Koprivnički Bregi" code="1340"/>
+		<city name="Koprivnički Ivanec" code="1341"/>
+		<city name="Križevci" code="1342"/>
+		<city name="Legrad" code="1343"/>
+		<city name="Molve" code="1344"/>
+		<city name="Novigrad Podravski" code="1345"/>
+		<city name="Novo Virje" code="1346"/>
+		<city name="Peteranec" code="1347"/>
+		<city name="Podravske Sesvete" code="1348"/>
+		<city name="Rasinja" code="1349"/>
+		<city name="Sokolovac" code="1350"/>
+		<city name="Sveti Ivan Žabno" code="1351"/>
+		<city name="Sveti Petar Orehovec" code="1352"/>
+		<city name="Virje" code="1353"/>
+	</county>
+	<county name="Krapinsko-zagorska" code="1157">
+		<city name="Bedekovčina" code="1354"/>
+		<city name="Budinščina" code="1355"/>
+		<city name="Desinić" code="1356"/>
+		<city name="Donja Stubica" code="1357"/>
+		<city name="Đurmanec" code="1358"/>
+		<city name="Gornja Stubica" code="1359"/>
+		<city name="Hrašćina" code="1360"/>
+		<city name="Hum Na Sutli" code="1361"/>
+		<city name="Jesenje" code="1362"/>
+		<city name="Klanjec" code="1363"/>
+		<city name="Konjščina" code="1364"/>
+		<city name="Kraljevec Na Sutli" code="1365"/>
+		<city name="Krapina" code="1366"/>
+		<city name="Krapina - Okolica" code="1367"/>
+		<city name="Krapinske Toplice" code="1368"/>
+		<city name="Kumrovec" code="1369"/>
+		<city name="Lobor" code="1370"/>
+		<city name="Mače" code="1371"/>
+		<city name="Marija Bistrica" code="1372"/>
+		<city name="Mihovljan" code="1373"/>
+		<city name="Novi Golubovec" code="1374"/>
+		<city name="Oroslavje" code="1375"/>
+		<city name="Petrovsko" code="1376"/>
+		<city name="Pregrada" code="1377"/>
+		<city name="Radoboj" code="1378"/>
+		<city name="Stubičke Toplice" code="1379"/>
+		<city name="Sveti Križ Začretje" code="1380"/>
+		<city name="Tuhelj" code="1381"/>
+		<city name="Veliko Trgovišće" code="1382"/>
+		<city name="Zabok" code="1383"/>
+		<city name="Zagorska Sela" code="1384"/>
+		<city name="Zlatar" code="1385"/>
+		<city name="Zlatar-Bistrica" code="1386"/>
+	</county>
+	<county name="Ličko-senjska" code="1158">
+		<city name="Lovinac" code="1392"/>
+		<city name="Novalja" code="1393"/>
+		<city name="Otočac" code=" 1394"/>
+		<city name="Perušić" code="1395"/>
+		<city name="Plitvička Jezera" code="1396"/>
+		<city name="Senj" code="1397"/>
+		<city name="Udbina" code=" 1398"/>
+		<city name="Vrhovine" code="1399"/>
+	</county>
+	<county name="Međimurska" code="1159">
+		<city name="Donja Dubrava" code="1405"/>
+		<city name="Donji Kraljevec" code="1406"/>
+		<city name="Donji Vidovec" code="1407"/>
+		<city name="Goričan" code="1408"/>
+		<city name="Gornji Mihaljevec" code="1409"/>
+		<city name="Kotoriba" code="1410"/>
+		<city name="Mala Subotica" code="1411"/>
+		<city name="Mursko Središće" code="1412"/>
+		<city name="Nedelišće" code="1413"/>
+		<city name="Orehovica" code="1414"/>
+		<city name="Podturen" code="1415"/>
+		<city name="Prelog" code="1416"/>
+		<city name="Pribislavec" code="1417"/>
+		<city name="Selnica" code="1418"/>
+		<city name="Strahoninec" code="1419"/>
+		<city name="Sveta Marija" code="1420"/>
+		<city name="Sveti Juraj Na Bregu" code="1421"/>
+		<city name="Sveti Martin Na Muri" code="1422"/>
+		<city name="Šenkovec" code="1423"/>
+		<city name="Štrigova" code="1424"/>
+		<city name="Vratišinec" code="1425"/>
+	</county>
+	<county name="Osječko-baranjska" code="1160">
+		<city name="Čeminac" code="1431"/>
+		<city name="Čepin" code="1432"/>
+		<city name="Darda" code="1433"/>
+		<city name="Donja Motičina" code="1434"/>
+		<city name="Donji Miholjac" code="1435"/>
+		<city name="Draž" code="1436"/>
+		<city name="Drenje" code="1437"/>
+		<city name="Đakovo" code="1438"/>
+		<city name="Đurđenovac" code="1439"/>
+		<city name="Erdut" code="1440"/>
+		<city name="Ernestinovo" code="1441"/>
+		<city name="Feričanci" code="1442"/>
+		<city name="Gorjani" code="1443"/>
+		<city name="Jagodnjak" code="1444"/>
+		<city name="Kneževi Vinogradi" code="1445"/>
+		<city name="Koška" code="1446"/>
+		<city name="Levanjska Varoš" code="1447"/>
+		<city name="Magadenovac" code="1448"/>
+		<city name="Marijanci" code="1449"/>
+		<city name="Našice" code="1450"/>
+		<city name="Osijek" code="1451"/>
+		<city name="Osijek - Okolica" code="1452"/>
+		<city name="Petlovac" code="1453"/>
+		<city name="Petrijevci" code="1454"/>
+		<city name="Podgorač" code="1455"/>
+		<city name="Podravska Moslavina" code="1456"/>
+		<city name="Popovac" code="1457"/>
+		<city name="Punitovci" code="1458"/>
+		<city name="Satnica Đakovačka" code="1459"/>
+		<city name="Semeljci" code="1460"/>
+		<city name="Strizivojna" code="1461"/>
+		<city name="Šodolovci" code="1462"/>
+		<city name="Trnava" code="1463"/>
+		<city name="Valpovo" code="1464"/>
+		<city name="Viljevo" code="1465"/>
+		<city name="Viškovci" code="1466"/>
+		<city name="Vladislavci" code="1467"/>
+		<city name="Vuka" code="1468"/>
+	</county>
+	<county name="Požeško-slavonska" code="1161">
+		<city name="Brestovac" code="1469"/>
+		<city name="Čaglin" code="1470"/>
+		<city name="Jakšić" code="1471"/>
+		<city name="Kaptol" code="1472"/>
+		<city name="Kutjevo" code="1473"/>
+		<city name="Lipik" code="1474"/>
+		<city name="Pakrac" code="1475"/>
+		<city name="Pleternica" code="1476"/>
+		<city name="Požega" code="1477"/>
+		<city name="Požega - Okolica" code="1478"/>
+		<city name="Velika" code="1479"/>
+	</county>
+	<county name="Primorsko-goranska" code="1162">
+		<city name="Bakar" code="1480"/>
+		<city name="Baška" code="1481"/>
+		<city name="Brod Moravice" code="1482"/>
+		<city name="Cres" code="1483"/>
+		<city name="Crikvenica" code="1484"/>
+		<city name="Čabar" code="1485"/>
+		<city name="Čavle" code="1486"/>
+		<city name="Delnice" code="1487"/>
+		<city name="Dobrinj" code="1488"/>
+		<city name="Fužine" code="1489"/>
+		<city name="Jelenje" code="1490"/>
+		<city name="Kastav" code="1491"/>
+		<city name="Klana" code="1493"/>
+		<city name="Kostrena" code="1494"/>
+		<city name="Kraljevica" code="1495"/>
+		<city name="Krk" code="1496"/>
+		<city name="Lokve" code="1497"/>
+		<city name="Lovran" code="1498"/>
+		<city name="Mali Lošinj" code="1499"/>
+		<city name="Malinska-Dubašnica" code="1500"/>
+		<city name="Matulji" code="1501"/>
+		<city name="Mošćenička Draga" code="1502"/>
+		<city name="Mrkopalj" code="1503"/>
+		<city name="Novi Vinodolski" code="1504"/>
+		<city name="Omišalj" code="1505"/>
+		<city name="Opatija" code="1506"/>
+		<city name="Opatija - Okolica" code="1507"/>
+		<city name="Punat" code="1508"/>
+		<city name="Rab" code="1509"/>
+		<city name="Ravna Gora" code="1510"/>
+		<city name="Rijeka" code="1511"/>
+		<city name="Skrad" code="1513"/>
+		<city name="Vinodolska Općina" code="1514"/>
+		<city name="Viškovo" code="1515"/>
+		<city name="Vrbnik" code="1516"/>
+		<city name="Vrbovsko" code="1517"/>
+	</county>
+	<county name="Šibensko-kninska" code="1165">
+
+	</county>
+	<county name="Sisačko-moslavačka" code="1163">
+
+	</county>
+	<county name="Splitsko-dalmatinska" code="1164">
+
+	</county>
+	<county name="Varaždinska" code="1166">
+
+	</county>
+	<county name="Virovitičko-podravska" code="1167">
+
+	</county>
+	<county name="Vukovarsko-srijemska" code="1168">
+
+	</county>
+	<county name="Zadarska" code="1169">
+
+	</county>
+	<county name="Zagrebačka" code="1170">
+
+	</county>
+</counties>

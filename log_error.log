@@ -1,0 +1,36 @@
+
+ERROR - T(11.11.2020. 09:58) - 'tuple' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:/Users/dgavric/PycharmProjects/demo_prj/herne_valves_xlsx_rebuild.py", line 60, in <module>
+    if cell.value is not None:
+AttributeError: 'tuple' object has no attribute 'value'
+
+ERROR - T(11.11.2020. 09:58) - Cannot convert (<Cell 'Sheet1'.D1>, <Cell 'Sheet1'.E1>) to Excel
+Traceback (most recent call last):
+  File "C:/Users/dgavric/PycharmProjects/demo_prj/herne_valves_xlsx_rebuild.py", line 64, in <module>
+    sh_new.cell(r, 4, cell)
+  File "C:\Users\dgavric\PycharmProjects\demo_prj\venv\lib\site-packages\openpyxl\worksheet\worksheet.py", line 242, in cell
+    cell.value = value
+  File "C:\Users\dgavric\PycharmProjects\demo_prj\venv\lib\site-packages\openpyxl\cell\cell.py", line 216, in value
+    self._bind_value(value)
+  File "C:\Users\dgavric\PycharmProjects\demo_prj\venv\lib\site-packages\openpyxl\cell\cell.py", line 199, in _bind_value
+    raise ValueError("Cannot convert {0!r} to Excel".format(value))
+ValueError: Cannot convert (<Cell 'Sheet1'.D1>, <Cell 'Sheet1'.E1>) to Excel
+
+ERROR - T(11.11.2020. 09:59) - 'tuple' object has no attribute 'value'
+Traceback (most recent call last):
+  File "C:/Users/dgavric/PycharmProjects/demo_prj/herne_valves_xlsx_rebuild.py", line 64, in <module>
+    sh_new.cell(r, 4, cell.value)
+AttributeError: 'tuple' object has no attribute 'value'
+
+ERROR - T(11.11.2020. 10:02) - Cannot convert <Cell 'Sheet1'.D1> to Excel
+Traceback (most recent call last):
+  File "C:/Users/dgavric/PycharmProjects/demo_prj/herne_valves_xlsx_rebuild.py", line 64, in <module>
+    sh_new.cell(r, 4, cell)
+  File "C:\Users\dgavric\PycharmProjects\demo_prj\venv\lib\site-packages\openpyxl\worksheet\worksheet.py", line 242, in cell
+    cell.value = value
+  File "C:\Users\dgavric\PycharmProjects\demo_prj\venv\lib\site-packages\openpyxl\cell\cell.py", line 216, in value
+    self._bind_value(value)
+  File "C:\Users\dgavric\PycharmProjects\demo_prj\venv\lib\site-packages\openpyxl\cell\cell.py", line 199, in _bind_value
+    raise ValueError("Cannot convert {0!r} to Excel".format(value))
+ValueError: Cannot convert <Cell 'Sheet1'.D1> to Excel
