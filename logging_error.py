@@ -34,3 +34,14 @@ def get_logger(logger_name, path=None):
 
     return logger
 
+
+def get_logger_st():
+    logger = logging.getLogger()
+
+    logger.setLevel(logging.DEBUG)
+
+    logger.addHandler(get_console_handler())
+
+    logger.propagate = False
+
+    return logger

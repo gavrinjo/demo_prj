@@ -16,12 +16,9 @@ log = log.get_logger(log_file)
 
 time_now = datetime.now().strftime("%Y-%m-%d_%H%M%S")       # date/time in format as (Y-m-d_HMS)
 root_path = Path("J:\\32_IZ224_SIEMENS_Herne\\60_Construction\\10_Sx_Input\\30_Sx_Project_Documentation\\10_Mechanical_Engineering_Project\\40_Piping_Iso")     # main path
-exclude_dir = ["00_Document_templates"]     # excluded folders (these are skipped)
-include_dir = ["00_Archive", "00_archive", "01_Archive", "01_archive"]      # included folders (search only in these)
-search_for = "60*BR*"   # search pattern
-search_ext = "pdf"      # extension to look for
+exclude_dir = ["00_Archive", "00_archive", "01_Archive", "01_archive", "00_Document_templates"]     # excluded folders (these are skipped)
 
-dlist = dl.dir_list(root_path, search_for, search_ext, exclude_dir, include_dir)    # list of required files
+dlist = dl.dir_list(root_path, src_for="60*BR*", ext="pdf", exclude=exclude_dir)    # list of required files
 
 wb_save_path = Path("D:\\00_HERNE\\test\\")     # workbook save path
 wb_file_name = "valves_from_archive_folder"     # workbook save filename
