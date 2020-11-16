@@ -32,7 +32,7 @@ def copy_xl(src, col1, col2, col3):
             # print(str(item.value), item.offset(0, col_offset).value)
         except Exception as error:
             # log.exception(f"{item.value} --> {error}", exc_info=True)
-            ws.cell(coordinate_from_string(item.coordinate)[1], column_index_from_string(col3), log.exception(f"{item.value} --> {error}", exc_info=False))
+            ws.cell(coordinate_from_string(item.coordinate)[1], column_index_from_string(col3), str(log.exception(f"{item.value} --> {error}", exc_info=True)))
         else:
             ws.cell(coordinate_from_string(item.coordinate)[1], column_index_from_string(col3), "success")
 
