@@ -5,16 +5,21 @@ from openpyxl import Workbook, load_workbook
 from pathlib import Path
 
 
-def dir_list(src, src_for=None, ext=None, exclude=None):
+def dir_list(src, obj_type=None, src_for=None, ext=None, exclude=None):
 
     if src_for is None:
         src_for = "*"
     if ext is None:
         ext = "*"
 
+    if obj_type == "f":
+        obj_type = f"/{src_for}.{ext}"
+    elif obj_type is None or "d":
+        obj_type = ""
+
     f_list = list()
 
-    for obj in src.glob(f"**/{src_for}.{ext}"):
+    for obj in src.glob(f"**{obj_type}"):
 
         if exclude is None:
             f_list.append(obj)

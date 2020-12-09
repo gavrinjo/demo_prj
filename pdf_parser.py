@@ -13,7 +13,7 @@ def parse(file):
         parser = PDFParser(in_file)
         doc = PDFDocument(parser)
         rsrcmgr = PDFResourceManager()
-        device = TextConverter(rsrcmgr, output_string, laparams=LAParams())
+        device = TextConverter(rsrcmgr, output_string, laparams=LAParams(detect_vertical=True))
         interpreter = PDFPageInterpreter(rsrcmgr, device)
         for page in PDFPage.create_pages(doc):
             interpreter.process_page(page)
