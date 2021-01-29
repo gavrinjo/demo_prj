@@ -6,6 +6,10 @@ root_path = os.path.normpath("D:/00_herne/ALL_DOCS_download")
 exclude = []
 
 def path_components(path):
+    """
+    Args:
+        path:
+    """
     folders = []
     while 1:
         path, folder = os.path.split(path)
@@ -20,6 +24,10 @@ def path_components(path):
 
 
 def get_list(path):
+    """
+    Args:
+        path:
+    """
     list_path = []
     for path, dirs, files in os.walk(path):
         for filename in files:
@@ -31,6 +39,13 @@ def get_list(path):
 
 
 def copytree(src, dst, symlinks=False, ignore=None):
+    """
+    Args:
+        src:
+        dst:
+        symlinks:
+        ignore:
+    """
     for item in os.listdir(src):
         s = os.path.join(src, item)
         d = os.path.join(dst, item)

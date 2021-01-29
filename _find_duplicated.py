@@ -21,10 +21,10 @@ def check_for_duplicates(paths, hash=hashlib.sha1, error_log=log):
     hashes = {}
     time_now = datetime.now().strftime("%Y-%m-%d_%H%M%S")
     exclude = ["00_Archive", "00_archive", "01_Archive", "01_archive", "00_Document_templates", "01_Deleted lines", "02_Red_Corex",
-               "03_Additional_Workfiles", "SKID"]
+               "03_Additional_Workfiles", "SKID", "Bare"]
 
-    wb_save_path = Path("D:\\00_HERNE\\_tracking")
-    wb_save_name = "duplicated_support_files_in_wf_list"
+    wb_save_path = Path("N:\\DGAVRIC\\_ITTER")
+    wb_save_name = "duplicated_files"
     wb_rev = "01"  # workbook revision
     wb = Workbook()  # workbook
     ws = wb.active  # workbook sheet activate
@@ -34,7 +34,7 @@ def check_for_duplicates(paths, hash=hashlib.sha1, error_log=log):
     logger = error_log.get_logger(f"{wb_save_name}_{log_file}")
 
     for path in paths:
-        fn_list = dl.dir_list(Path(path), obj_type="f", src_for="60*BQ*", ext="pdf", exclude=exclude)
+        fn_list = dl.dir_list(Path(path), obj_type="f", src_for="*", ext="pdf", exclude=exclude)
         for file in fn_list:
             hashobj = hash()
             for chunk in chunk_reader(open(file, 'rb')):
@@ -45,9 +45,11 @@ def check_for_duplicates(paths, hash=hashlib.sha1, error_log=log):
                 # print("Duplicate found: %s and %s" % (file, duplicate))
                 try:
                     ws.cell(r, 1, f'=HYPERLINK("{file}","Open")')
-                    ws.cell(r, 2, str(file))  # file path
-                    ws.cell(r, 3, f'=HYPERLINK("{duplicate}","Open")')
-                    ws.cell(r, 4, str(duplicate))  # file path
+                    ws.cell(r, 2, file.name)
+                    ws.cell(r, 3, str(file))  # file path
+                    ws.cell(r, 5, f'=HYPERLINK("{duplicate}","Open")')
+                    ws.cell(r, 6, duplicate.name)
+                    ws.cell(r, 7, str(duplicate))  # file path
                     r += 1
                 except Exception as error:
                     logger.exception(f"{wb_save_name}_{file} --> {error}")
@@ -63,5 +65,5 @@ def check_for_duplicates(paths, hash=hashlib.sha1, error_log=log):
 else:
     print("Please pass the paths to check as parameters to the script")
 """
-rp = ["J:\\32_IZ224_SIEMENS_Herne\\60_Construction\\20_Sx_Working\\50_Workfiles"]
+rp = ["N:\\DGAVRIC\\_ITTER\\08_Ax_Tender_Documentation"]
 check_for_duplicates(rp)

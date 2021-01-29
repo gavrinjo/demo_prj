@@ -14,6 +14,10 @@ for path, dirs, files in os.walk(root_path):
 
 
 def get_list(pat):
+    """
+    Args:
+        pat:
+    """
     list_path = []
     for path, dirs, files in os.walk(pat):
         # print(path, dirs, files)

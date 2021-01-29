@@ -62,6 +62,10 @@ else:
 
 
 def f(x):
+    """
+    Args:
+        x:
+    """
     return PyRSS2Gen.RSSItem(
         title=x['title'] + "[" + x['price'] + "]",
         link=x['href'],

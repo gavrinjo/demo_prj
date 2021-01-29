@@ -8,6 +8,10 @@ from pdfminer.pdfparser import PDFParser
 
 
 def parse(file):
+    """
+    Args:
+        file:
+    """
     output_string = StringIO()
     with open(file, 'rb') as in_file:
         parser = PDFParser(in_file)

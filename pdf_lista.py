@@ -2,6 +2,10 @@ import os
 
 
 def get_list(path):
+    """
+    Args:
+        path:
+    """
     for path, dirs, files in os.walk(path):
         for filename in files:
             if "pdf" in filename:

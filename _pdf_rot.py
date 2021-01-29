@@ -4,6 +4,11 @@ pdf_path = "J:\\32_IZ224_SIEMENS_Herne\\60_Construction\\10_Sx_Input\\30_Sx_Proj
 
 
 def pdf_rotate(src, pge):
+    """
+    Args:
+        src:
+        pge:
+    """
     pdf_reader = PdfFileReader(src)
     deg = pdf_reader.getPage(pge).get('/Rotate')
     page = pdf_reader.getPage(pge).mediaBox

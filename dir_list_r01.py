@@ -1,34 +1,41 @@
 import os
 import re
 from datetime import datetime
-from openpyxl import Workbook, load_workbook
 from pathlib import Path
 
 
-def dir_list(src, obj_type=None, src_for=None, ext=None, exclude=None):
+def dir_list(base_dir, lookup=None, extension=None, typ=None, exclude=None):
 
-    if src_for is None:
-        src_for = "*"
-    if ext is None:
-        ext = "*"
+    dd = {
+        "files": [],
+        "directories": []
+    }
 
-    if obj_type == "f":
-        obj_type = f"/{src_for}.{ext}"
-    elif obj_type is None or "d":
-        obj_type = ""
+    if lookup is None:
+        lookup = "*"
+    if extension is None:
+        extension = "*"
 
-    f_list = list()
-
-    for obj in src.glob(f"**{obj_type}"):
-
-        if exclude is None:
-            f_list.append(obj)
-        elif exclude is not None:
+    for obj in Path(base_dir).rglob(f"{lookup}.{extension}"):
+        if exclude is not None:
             check_excluded = any(item in obj.parts for item in exclude)
             if check_excluded is not True:
-                f_list.append(obj)
+                if obj.is_file():
+                    dd["files"].append(obj)
+                else:
+                    dd["directories"].append(obj)
+        else:
+            if obj.is_file():
+                dd["files"].append(obj)
             else:
-                pass
+                dd["directories"].append(obj)
+    if typ == "f" or None:
+        return dd["files"]
+    elif typ == "d":
+        return dd["directories"]
 
-    return f_list
 
+test_dir = Path("D:\\00_PRJS\\ITER\\08_Ax_Tender_Documentation")
+excluded = ["Bare"]
+for i in glob_test(test_dir, lookup="*_*_*_*_*_v*.*", extension="pdf", typ="f", exclude=excluded):
+    print(i)
