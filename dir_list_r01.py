@@ -37,5 +37,5 @@ def dir_list(base_dir, lookup=None, extension=None, typ=None, exclude=None):
 
 test_dir = Path("D:\\00_PRJS\\ITER\\08_Ax_Tender_Documentation")
 excluded = ["Bare"]
-for i in glob_test(test_dir, lookup="*_*_*_*_*_v*.*", extension="pdf", typ="f", exclude=excluded):
+for i in dir_list(test_dir, lookup="*_*_*_*_*_v*.*", extension="*", typ="f", exclude=excluded):
     print(i)

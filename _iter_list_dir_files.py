@@ -7,22 +7,15 @@ import dir_list_r01 as dl
 import logging_error as log
 
 time_now = datetime.now().strftime("%Y-%m-%d_%H%M%S")
-root_path = Path("N:\\DGAVRIC\\_ITTER\\08_Ax_Tender_Documentation")
+root_path = "N:\\DGAVRIC\\_ITTER\\08_Ax_Tender_Documentation"
 # root_path = Path("D:\\00_PRJS\\ITER\\08_Ax_Tender_Documentation")
 # root_path = Path("J:\\32_IZ224_SIEMENS_Herne\\60_Construction\\20_Sx_Working\\50_Workfiles")
 # root_path = Path("J:\\32_IZ224_SIEMENS_Herne\\60_Construction\\10_Sx_Input\\30_Sx_Project_Documentation\\10_Mechanical_Engineering_Project\\50_H&S_drawings")
 exclude = ["00_Archive", "00_archive", "01_Archive", "01_archive", "00_Document_templates", "02_Red_Corex", "03_Additional_Workfiles", "SKID", "Deleted", "Bare"]
 
 # ls = dl.dir_list(root_path, ext="pdf", exclude=exclude)     # list of valves
-"""
-# fn_list = list()
-pattern = r"(\d\d)(BQ)"
-for i in dl.dir_list(root_path, exclude=exclude):
-    if re.search(pattern, i.name):
-        fn_list.append(i)
-"""
 
-fn_list = dl.dir_list(root_path, typ="f", lookup="*_*_*_*_*_v*.*", extension="pdf", exclude=exclude)
+fn_list = dl.dir_list(root_path, lookup="*_*_*_*_*_v*.*", extension="pdf", typ="f", exclude=exclude)
 wb_save_path = Path("N:\\DGAVRIC\\_ITTER")
 wb_save_name = "procedure_file_list"
 wb_rev = "00"     # workbook revision

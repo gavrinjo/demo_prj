@@ -24,8 +24,8 @@ def check_for_duplicates(paths, hash=hashlib.sha1, error_log=log):
                "03_Additional_Workfiles", "SKID", "Bare"]
 
     wb_save_path = Path("N:\\DGAVRIC\\_ITTER")
-    wb_save_name = "duplicated_files"
-    wb_rev = "01"  # workbook revision
+    wb_save_name = "duplicated_files_proba"
+    wb_rev = "02"  # workbook revision
     wb = Workbook()  # workbook
     ws = wb.active  # workbook sheet activate
     r = 1  # initial row number
@@ -34,7 +34,7 @@ def check_for_duplicates(paths, hash=hashlib.sha1, error_log=log):
     logger = error_log.get_logger(f"{wb_save_name}_{log_file}")
 
     for path in paths:
-        fn_list = dl.dir_list(Path(path), obj_type="f", src_for="*", ext="pdf", exclude=exclude)
+        fn_list = dl.dir_list(path, typ="f", lookup="*", extension="*", exclude=exclude)
         for file in fn_list:
             hashobj = hash()
             for chunk in chunk_reader(open(file, 'rb')):
@@ -60,10 +60,11 @@ def check_for_duplicates(paths, hash=hashlib.sha1, error_log=log):
     wb.close()
 
 
-"""if sys.argv[1:]:
+'''
+if sys.argv[1:]:
     check_for_duplicates(sys.argv[1:])
 else:
-    print("Please pass the paths to check as parameters to the script")
-"""
+    print("Please pass the paths to check as parameters to the script")'''
+
 rp = ["N:\\DGAVRIC\\_ITTER\\08_Ax_Tender_Documentation"]
 check_for_duplicates(rp)
