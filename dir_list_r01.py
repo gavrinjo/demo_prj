@@ -29,13 +29,17 @@ def dir_list(base_dir, lookup=None, extension=None, typ=None, exclude=None):
                 dd["files"].append(obj)
             else:
                 dd["directories"].append(obj)
-    if typ == "f" or None:
+    if typ == "f" or typ is None:
         return dd["files"]
     elif typ == "d":
         return dd["directories"]
 
 
-test_dir = Path("D:\\00_PRJS\\ITER\\08_Ax_Tender_Documentation")
-excluded = ["Bare"]
-for i in dir_list(test_dir, lookup="*_*_*_*_*_v*.*", extension="*", typ="f", exclude=excluded):
-    print(i)
+# NOTE - Example below.
+#
+# test_dir = Path("D:\\00_PRJS\\ITER\\08_Ax_Tender_Documentation")
+# excluded = ["Bare"]
+# for i in dir_list(test_dir, lookup="*_*_*_*_*_v*.*", extension="*", typ="f", exclude=excluded):
+#     print(i)
+#
+# NOTE - end
